@@ -1,4 +1,11 @@
-<h1><%= @list.name %></h1>
+<% content_for(:title, "List | To Do") %>
+<% content_for(:navbar) do %>
+    <li><a href="/">Home</a></li>
+    <li><a href="lists">List</a></li>
+    <li><a href="tasks">Task.</a></li>
+  <% end %>
+
+  <h1><%= @list.name %></h1>
 
   <% if @list.tasks.any? %>
     <h4>Here are the tasks for this list:</h4>
@@ -24,4 +31,3 @@
                                          :method => "delete"} %></p>
 
   <p><%= link_to "Return to lists", lists_path %></p>
-  

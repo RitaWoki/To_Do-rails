@@ -15,7 +15,7 @@ source 'https://rubygems.org'
     gem 'launchy'
     gem 'pry'
     gem 'shoulda-matchers'
-    gem 'Capybara'
+    gem 'capybara'
   end
 
   group :development do
